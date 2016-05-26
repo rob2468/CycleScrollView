@@ -12,8 +12,8 @@
 		8F5A1CB81CF6D47A006A301C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A1CB71CF6D47A006A301C /* ViewController.m */; };
 		8F5A1CBD1CF6D47A006A301C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A1CBC1CF6D47A006A301C /* Assets.xcassets */; };
 		8F5A1CC01CF6D47A006A301C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A1CBE1CF6D47A006A301C /* LaunchScreen.storyboard */; };
-		8F5A1CCA1CF6D5D4006A301C /* CSCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A1CC91CF6D5D4006A301C /* CSCycleScrollView.m */; };
-		8F5A1CCD1CF6D63C006A301C /* CSCycleScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A1CCC1CF6D63C006A301C /* CSCycleScrollCell.m */; };
+		8F5A1CD21CF6E2F7006A301C /* CSCycleScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A1CCF1CF6E2F7006A301C /* CSCycleScrollCell.m */; };
+		8F5A1CD31CF6E2F7006A301C /* CSCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A1CD11CF6E2F7006A301C /* CSCycleScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,10 @@
 		8F5A1CBC1CF6D47A006A301C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F5A1CBF1CF6D47A006A301C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F5A1CC11CF6D47A006A301C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F5A1CC81CF6D5D4006A301C /* CSCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSCycleScrollView.h; path = CycleScrollView/CSCycleScrollView.h; sourceTree = "<group>"; };
-		8F5A1CC91CF6D5D4006A301C /* CSCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSCycleScrollView.m; path = CycleScrollView/CSCycleScrollView.m; sourceTree = "<group>"; };
-		8F5A1CCB1CF6D63C006A301C /* CSCycleScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSCycleScrollCell.h; path = CycleScrollView/CSCycleScrollCell.h; sourceTree = "<group>"; };
-		8F5A1CCC1CF6D63C006A301C /* CSCycleScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSCycleScrollCell.m; path = CycleScrollView/CSCycleScrollCell.m; sourceTree = "<group>"; };
+		8F5A1CCE1CF6E2F7006A301C /* CSCycleScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCycleScrollCell.h; sourceTree = SOURCE_ROOT; };
+		8F5A1CCF1CF6E2F7006A301C /* CSCycleScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCycleScrollCell.m; sourceTree = SOURCE_ROOT; };
+		8F5A1CD01CF6E2F7006A301C /* CSCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCycleScrollView.h; sourceTree = SOURCE_ROOT; };
+		8F5A1CD11CF6E2F7006A301C /* CSCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCycleScrollView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,12 @@
 			children = (
 				8F5A1CB31CF6D47A006A301C /* AppDelegate.h */,
 				8F5A1CB41CF6D47A006A301C /* AppDelegate.m */,
-				8F5A1CC71CF6D50C006A301C /* CycleScrollView */,
 				8F5A1CB61CF6D47A006A301C /* ViewController.h */,
 				8F5A1CB71CF6D47A006A301C /* ViewController.m */,
+				8F5A1CCE1CF6E2F7006A301C /* CSCycleScrollCell.h */,
+				8F5A1CCF1CF6E2F7006A301C /* CSCycleScrollCell.m */,
+				8F5A1CD01CF6E2F7006A301C /* CSCycleScrollView.h */,
+				8F5A1CD11CF6E2F7006A301C /* CSCycleScrollView.m */,
 				8F5A1CBC1CF6D47A006A301C /* Assets.xcassets */,
 				8F5A1CBE1CF6D47A006A301C /* LaunchScreen.storyboard */,
 				8F5A1CC11CF6D47A006A301C /* Info.plist */,
@@ -81,17 +84,6 @@
 				8F5A1CB11CF6D47A006A301C /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8F5A1CC71CF6D50C006A301C /* CycleScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				8F5A1CC81CF6D5D4006A301C /* CSCycleScrollView.h */,
-				8F5A1CC91CF6D5D4006A301C /* CSCycleScrollView.m */,
-				8F5A1CCB1CF6D63C006A301C /* CSCycleScrollCell.h */,
-				8F5A1CCC1CF6D63C006A301C /* CSCycleScrollCell.m */,
-			);
-			name = CycleScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +159,9 @@
 			files = (
 				8F5A1CB81CF6D47A006A301C /* ViewController.m in Sources */,
 				8F5A1CB51CF6D47A006A301C /* AppDelegate.m in Sources */,
-				8F5A1CCA1CF6D5D4006A301C /* CSCycleScrollView.m in Sources */,
-				8F5A1CCD1CF6D63C006A301C /* CSCycleScrollCell.m in Sources */,
 				8F5A1CB21CF6D47A006A301C /* main.m in Sources */,
+				8F5A1CD31CF6E2F7006A301C /* CSCycleScrollView.m in Sources */,
+				8F5A1CD21CF6E2F7006A301C /* CSCycleScrollCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
