@@ -1,0 +1,15 @@
+//
+//  CSCycleScrollView.h
+//  CycleScrollView
+//
+//  Created by chenjun on 5/26/16.
+//  Copyright © 2016 chenjun. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface CSCycleScrollView : UIView
+
+- (void)updateUIWithData:(NSArray *)dataList;
+
+@end
